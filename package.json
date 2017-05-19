@@ -4,7 +4,9 @@
   "description": "Нужно сделать вывод данных списка музейных экспонатов из файла data.json. Код разместить на https://github.com, прислать ссылку на результат",
   "main": "index.html",
   "scripts": {
-    "test": "jest"
+    "test": "node ./node_modules/webpack/bin/webpack --config webpack.testconfig.js && jest",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --history-api-fallback",
+    "build": "node ./node_modules/webpack/bin/webpack"
   },
   "repository": {
     "type": "git",
@@ -17,22 +19,34 @@
   },
   "homepage": "https://github.com/dreammaster82/bmp-react-test#readme",
   "devDependencies": {
-    "babel-jest": "^20.0.1",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
+    "babel-ignore": "^2.0.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "enzyme": "^2.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.1",
     "json-loader": "^0.5.4",
+    "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
+    "regenerator-runtime": "^0.10.5",
+    "style-loader": "^0.17.0",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "history": "^4.6.1",
     "react": "^15.5.4",
-    "react-data-grid": "^2.0.41",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
-    "react-router-redux": "^4.0.8"
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-table": "^6.0.3",
+    "redux": "^3.6.0"
   }
 }
