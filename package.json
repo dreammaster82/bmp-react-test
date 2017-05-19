@@ -1,0 +1,38 @@
+{
+  "name": "bmp-react-test",
+  "version": "1.0.0",
+  "description": "Нужно сделать вывод данных списка музейных экспонатов из файла data.json. Код разместить на https://github.com, прислать ссылку на результат",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreammaster82/bmp-react-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreammaster82/bmp-react-test/issues"
+  },
+  "homepage": "https://github.com/dreammaster82/bmp-react-test#readme",
+  "devDependencies": {
+    "babel-jest": "^20.0.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^20.0.1",
+    "json-loader": "^0.5.4",
+    "react-test-renderer": "^15.5.4",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-data-grid": "^2.0.41",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router-redux": "^4.0.8"
+  }
+}
